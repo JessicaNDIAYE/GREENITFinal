@@ -1,0 +1,503 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Top Navigation Bar */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    width: 100%;
+}
+
+li {
+    margin: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: #818181; /* Dark Gray */
+    font-size: 10px;
+}
+
+a:hover {
+    color: black;
+}
+
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Language Navigation Bar */
+.language-bar {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.language-bar li {
+    margin: 0 15px;
+}
+
+.language-bar a {
+    text-decoration: none;
+    color: #818181; /* Dark Gray */
+    font-size: 10px;
+}
+
+.language-bar a:hover {
+    color: black;
+}
+
+/* Header Section */
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0px;
+}
+
+/* Date and Today’s Paper Section */
+.date-container {
+    display: flex;
+    flex-direction: column; /* Makes the text stack on top of each other */
+    align-items: flex-start; /* Aligns text to the left */
+    position: absolute;
+    left: 162px;
+    top: 70px;
+}
+
+.date, .today-paper {
+    font-family: Arial, sans-serif;
+    font-size: 10px;
+    color: black;
+    margin: 2px 0; /* Adds a little space between them */
+}
+
+
+
+/* General Navbar Styling */
+/* General Navbar Styling */
+.navbar {
+    font-family: Arial, sans-serif;
+    font-size: 20px; /* Set font size for the navbar */
+    background-color: white; /* White background */
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Style for each link in the navbar */
+.navbar a {
+    color: black; /* Black text */
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px; /* Set font size for navbar links */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    color: black;
+}
+
+/* Dropdown Container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (second menu) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white; /* White background for dropdown */
+    min-width: 160px;
+    z-index: 1;
+    border: 1px solid #ddd; /* Light border for dropdown */
+}
+
+/* Dropdown Links */
+.dropdown-content a {
+    color: black; /* Black text in the dropdown */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 20px; /* Set font size for dropdown links */
+}
+
+/* Change color on hover for dropdown items */
+.dropdown-content a:hover {
+    background-color: #ddd; /* Light gray background on hover */
+    color: black;
+}
+
+/* Second-level Dropdown */
+.second-dropdown {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: white; /* White background for second-level dropdown */
+    min-width: 200px;
+    z-index: 2;
+}
+
+/* Display the second dropdown when hovering over a parent item */
+.second-dropdown a {
+    padding: 12px 16px;
+    font-size: 20px; /* Set font size for second-level dropdown links */
+}
+
+/* Dropdown hover effect */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Show second-level dropdown when hovering over an item */
+.dropdown-content a:hover .second-dropdown {
+    display: block;
+}
+
+/* Show second-level dropdown when hovering over a dropdown */
+.dropdown:hover .second-dropdown {
+    display: block;
+}
+
+
+
+
+
+
+
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+.carousel {
+    flex: 2;
+    overflow: hidden;
+    position: relative;
+    width: 600px;
+}
+.carousel-inner {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 800%;
+}
+.carousel-item {
+    width: 12.5%;
+    flex: 0 0 auto;
+    background: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.carousel-item img {
+    width: 100px;
+    height: auto;
+    margin: 5px;
+}
+.carousel-controls {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.carousel-controls button {
+    background: rgba(0,0,0,0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+.carousel-indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.indicator {
+    width: 10px;
+    height: 10px;
+    background: gray;
+    border-radius: 50%;
+    margin: 5px;
+}
+.indicator.active {
+    background: black;
+}
+
+
+/* jn*/
+
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+.container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+
+.main-content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.headline h2, .headline h3 {
+    margin: 0;
+    color: #333;
+}
+
+.headline p {
+    font-size: 14px;
+    color: #666;
+}
+
+.header-linesjn {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.header-linesjn div {
+    width: 90%;
+    height: 1px;
+    background-color: black;
+    margin: 2px 0;
+}
+
+                
+                
+.carousel-itemjn .headlinejn {
+    display: flex;
+    align-items: center;
+}
+
+.left-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-right: 20px; /* Space between the images and the text */
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.title-image {
+    margin-bottom: 10px; /* Space between images */
+}
+
+
+
+.more-coverageall {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.more-coverage {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 15px;
+    width: 600px;
+}
+
+.more-coverage h3 {
+    margin-bottom: 0px;
+}
+
+.more-coverage span {
+    list-style: none;
+    background-color: white;
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.coverage-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 48%; /* Ajuste selon ton design */
+}
+
+.column span {
+    display: block;
+    padding: 5px 0;
+}
+
+.audio-section {
+    width: 60%;
+    margin: 20px auto;
+}
+
+.audio-section h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.audio-section h4 i {
+    color: #007bff;
+}
+
+.more-news p {
+    font-size: 14px;
+    margin: 10px 0;
+    color: #666;
+}
+
+.sidebarjn {
+    flex: 1;
+    background: #fff;
+    padding: 20px;
+    margin-left: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background: #e0e0e0;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.category:hover {
+    background: #d4d4d4;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    background: #bbb;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.logo {
+    width: 500px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+
+/* Carousel */
+.carouseljn {
+    position: relative;
+    overflow: hidden;
+    margin: 20px 0;
+}
+
+.carousel-itemjn {
+    display: none;
+    transition: opacity 0.5s ease;
+}
+
+.carousel-itemjn.active {
+    display: block;
+}
+
+.carousel-imagejn {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Carousel Buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2rem;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* New: Add a unique ID for each carousel */
+.carousel-1 .prev, .carousel-1 .next {
+    left: 10px;
+    right: 10px;
+}
+
+.carousel-2 .prev, .carousel-2 .next {
+    left: 10px;
+    right: 10px;
+}
+
